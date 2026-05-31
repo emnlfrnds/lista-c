@@ -99,17 +99,11 @@ int main()
 
     do
     {
-        printf("\nInforme o nivel N do fractal (1 a 3): ");
-        if (scanf("%d", &N) != 1)
-        {
-            while (getchar() != '\n')
-                ;
-            printf("\nErro: Entrada invalida. Informe um numero.\n");
-            continue;
-        }
+        printf("\ninforme o nivel N do fractal (1 a 3):\n");
+        scanf("%d", &N);
         if (N < 1 || N > 3)
         {
-            printf("\nErro: Nivel invalido! Informe um numero entre 1 e 3.\n");
+            printf("\ninforme um numero entre 1 e 3.\n");
             continue;
         }
         break;
@@ -145,8 +139,7 @@ int main()
     double start_x = v_cx - L / 2.0;
     double start_y = v_cy - H / 2.5;
     desenhar(sequencia, tamanho_passo, grade, linhas, colunas, start_x, start_y, 0.0);
-
-    printf("\n--- Floco de Koch (Nivel %d) ---\n\n", N);
+    
     for (int i = 0; i < linhas; i++)
     {
         for (int j = 0; j < colunas; j++)
