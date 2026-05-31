@@ -12,15 +12,15 @@ int main(void)
         space = N - (N - i);
         for (int j = N; j > space; j--)
         {
-            printf("  ");
+            printf("    ");
         }
         for (int k = 1; k <= space; k++)
         {
-            printf("%d ", k);
+            printf("%2d  ", k);
         }
         for (int l = space - 1; l > 0; l--)
         {
-            printf("%d ", l);
+            printf("%2d  ", l);
         }
         printf("\n");
     }
