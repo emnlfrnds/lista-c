@@ -13,14 +13,14 @@ int main()
         {
             for (int j = 0; j < altura - i; j++)
             {
-                printf(" ");
+                printf("   ");
             }
-            printf("%d ", 1);
+            printf("%4d  ", 1);
 
             for (int k = 1; k <= i; k++)
             {
                 valor = valor * (i - k + 1) / k;
-                printf("%d ", valor);
+                printf("%4d  ", valor);
             }
             printf("\n");
         }
